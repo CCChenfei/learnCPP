@@ -16,23 +16,23 @@ void array_initial(CArray &array);
 
 void array_recap(CArray &array, int c);
 
-inline int array_capacity(CArray array)
+inline int array_capacity(const CArray &array)
 {
     return array.cap;
 }
 
 void array_append(CArray &array, int i);
 
-inline int array_size(CArray array)
+inline int array_size(const CArray &array)
 {
     return array.num;
 }
 
-int &array_at(CArray array, int n);
+int &array_at(CArray &array, int n);
 
-void array_copy(CArray &array1, CArray &array2);
+void array_copy(const CArray &array1, CArray &array2);
 
-bool array_compare(CArray& array1, CArray &array2);
+bool array_compare(const CArray& array1, const CArray &array2);
 
 void array_insert(CArray &array, int n, int i);
 

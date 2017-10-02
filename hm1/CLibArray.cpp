@@ -35,12 +35,12 @@ void array_append(CArray &array, int i)
 }
 
 
-int &array_at(CArray array, int n)
+int &array_at(CArray &array, int n)
 {
     return array.data[n];
 }
 
-void array_copy(CArray &array1, CArray &array2)
+void array_copy(const CArray &array1, CArray &array2)
 {
     array2.cap = array1.cap;
     array_recap(array2,array2.cap);
@@ -51,7 +51,7 @@ void array_copy(CArray &array1, CArray &array2)
     }
 }
 
-bool array_compare(CArray &array1, CArray &array2)
+bool array_compare(const CArray &array1, const CArray &array2)
 {
     if(array1.num==array2.num) {
         for (int i = 0; i < array1.num; i++) {
