@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenf/ClionProjects/hm2/CLibArray.cpp
+CLibArray.h
+/home/chenf/ClionProjects/hm2/CLibArray.h
+string.h
+-
+
+/home/chenf/ClionProjects/hm2/CLibArray.h
+
+/home/chenf/ClionProjects/hm2/LibArray.cpp
+assert.h
+-
+CLibArray.h
+/home/chenf/ClionProjects/hm2/CLibArray.h
+
