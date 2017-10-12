@@ -19,10 +19,10 @@ public:
     }
     void recapacity(int new_cap);
     void append(int i);
-    int size();
+    int size()const;
     int &at(int i);
     void copy(const CArray &array1);
-    bool compare(const CArray &array1);
+    bool compare(const CArray &array1)const;
     void insert(int n, int i);
 
     ~CArray()
