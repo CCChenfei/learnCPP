@@ -14,7 +14,7 @@ void CArray::recapacity(int new_cap) {
 
 }
 
-int CArray::size() {
+int CArray::size()const {
     return num;
 }
 
@@ -40,7 +40,7 @@ void CArray::copy(const CArray &array1) {
     num = array1.num;
 }
 
-bool CArray::compare(const CArray &array1) {
+bool CArray::compare(const CArray &array1)const {
     if(array1.num!=num)
         return false;
     for(int i = 0; i<num ;i++)
